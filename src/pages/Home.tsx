@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Container, Typography, Grid, Card, CardContent, CardActions, Button } from '@mui/material'
 import { Description, Public, EmojiEmotions, Code } from '@mui/icons-material'
 import { useTheme } from '@mui/material/styles'
+import { getImagePath } from '../utils/imageUtils'
 
 const Home: React.FC = () => {
   const theme = useTheme()
@@ -38,7 +39,7 @@ const Home: React.FC = () => {
   ]
 
   return (
-    <Box>
+    <Box sx={{ overflowX: 'hidden' }}>
       {/* Hero Section */}
       <Box
         sx={{
@@ -46,9 +47,10 @@ const Home: React.FC = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: `linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url('/img/hero-bg.jpg') center top no-repeat`,
+          background: `linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url('${getImagePath('/img/hero-bg.jpg')}') center top no-repeat`,
           backgroundSize: 'cover',
           position: 'relative',
+          overflowX: 'hidden',
           '&::after': {
             content: '""',
             position: 'absolute',
@@ -69,7 +71,7 @@ const Home: React.FC = () => {
             top: 0,
             width: '130%',
             height: '95%',
-            background: `linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url('/img/hero-bg.jpg') center top no-repeat`,
+            background: `linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url('${getImagePath('/img/hero-bg.jpg')}') center top no-repeat`,
             zIndex: 0,
             borderRadius: '0 0 50% 50%',
             transform: 'translateX(-50%) rotate(0deg)',

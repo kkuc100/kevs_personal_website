@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Typography, Box, Grid, Paper, LinearProgress } from '@mui/material'
 import { CheckCircle } from '@mui/icons-material'
 import { useTheme } from '@mui/material/styles'
+import { getImagePath } from '../utils/imageUtils'
 
 const About: React.FC = () => {
   const theme = useTheme()
@@ -44,7 +45,7 @@ const About: React.FC = () => {
         <Grid item xs={12} md={6}>
           <Box
             component="img"
-            src="/img/canada.jpg"
+            src={getImagePath('/img/canada.jpg')}
             alt="About"
             sx={{
               width: '100%',

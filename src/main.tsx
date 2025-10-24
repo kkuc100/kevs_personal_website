@@ -8,7 +8,7 @@ import theme from './theme/theme'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.PROD ? '/kevs_personal_website' : '/'}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <App />

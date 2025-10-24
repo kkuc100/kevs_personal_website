@@ -3,50 +3,52 @@ import { Container, Typography, Box, Grid, Paper } from '@mui/material'
 import { getImagePath } from '../utils/imageUtils'
 
 const AIGallery: React.FC = () => {
+  // Pre-calculate image paths to ensure they're evaluated at runtime
+  const getImageSrc = (path: string) => getImagePath(path)
 
   const aiImages = [
     {
-      src: getImagePath('/img/DALL-E/coffee_shop_working.png'),
+      src: getImageSrc('/img/DALL-E/coffee_shop_working.png'),
       title: 'Coffee Shop Working',
       description: 'AI-generated image of a productive workspace in a cozy coffee shop',
     },
     {
-      src: getImagePath('/img/DALL-E/electric_bike.png'),
+      src: getImageSrc('/img/DALL-E/electric_bike.png'),
       title: 'Electric Bike',
       description: 'Modern electric bike design showcasing sustainable transportation',
     },
     {
-      src: getImagePath('/img/DALL-E/happy_software_engineer.png'),
+      src: getImageSrc('/img/DALL-E/happy_software_engineer.png'),
       title: 'Happy Software Engineer',
       description: 'Portrait of a satisfied software engineer celebrating successful code',
     },
     {
-      src: getImagePath('/img/DALL-E/hiker.png'),
+      src: getImageSrc('/img/DALL-E/hiker.png'),
       title: 'Hiker',
       description: 'AI-generated image of an adventurous hiker exploring nature trails',
     },
     {
-      src: getImagePath('/img/DALL-E/logo_website.png'),
+      src: getImageSrc('/img/DALL-E/logo_website.png'),
       title: 'Website Logo',
       description: 'Creative logo design for web development and digital presence',
     },
     {
-      src: getImagePath('/img/DALL-E/ML_architecture.png'),
+      src: getImageSrc('/img/DALL-E/ML_architecture.png'),
       title: 'ML Architecture',
       description: 'Visual representation of machine learning system architecture',
     },
     {
-      src: getImagePath('/img/DALL-E/runner.png'),
+      src: getImageSrc('/img/DALL-E/runner.png'),
       title: 'Runner',
       description: 'Dynamic image of a runner in motion, representing perseverance',
     },
     {
-      src: getImagePath('/img/DALL-E/tokyo.png'),
+      src: getImageSrc('/img/DALL-E/tokyo.png'),
       title: 'Tokyo',
       description: 'AI-generated cityscape of Tokyo with its vibrant urban landscape',
     },
     {
-      src: getImagePath('/img/DALL-E/triathlon.png'),
+      src: getImageSrc('/img/DALL-E/triathlon.png'),
       title: 'Triathlon',
       description: 'Multi-sport athlete competing in a challenging triathlon event',
     },

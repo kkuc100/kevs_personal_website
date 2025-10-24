@@ -6,6 +6,7 @@ import { getImagePath } from '../utils/imageUtils'
 
 const About: React.FC = () => {
   const theme = useTheme()
+  const canadaImagePath = getImagePath('/img/canada.jpg')
 
   const facts = [
     { number: 3, label: 'Clients' },
@@ -45,7 +46,7 @@ const About: React.FC = () => {
         <Grid item xs={12} md={6}>
           <Box
             component="img"
-            src={getImagePath('/img/canada.jpg')}
+            src={canadaImagePath}
             alt="About"
             sx={{
               width: '100%',

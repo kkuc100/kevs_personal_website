@@ -1,16 +1,16 @@
 import React from 'react'
 import { Container, Typography, Box, Grid, Paper } from '@mui/material'
 
-// Import images
-import coffeeShopWorking from '/assets/img/DALL-E/coffee_shop_working.png'
-import electricBike from '/assets/img/DALL-E/electric_bike.png'
-import happySoftwareEngineer from '/assets/img/DALL-E/happy_software_engineer.png'
-import hiker from '/assets/img/DALL-E/hiker.png'
-import logoWebsite from '/assets/img/DALL-E/logo_website.png'
-import mlArchitecture from '/assets/img/DALL-E/ML_architecture.png'
-import runner from '/assets/img/DALL-E/runner.png'
-import tokyo from '/assets/img/DALL-E/tokyo.png'
-import triathlon from '/assets/img/DALL-E/triathlon.png'
+// Import images - Vite will process these and provide optimized URLs
+import coffeeShopWorking from '/img/DALL-E/coffee_shop_working.png'
+import electricBike from '/img/DALL-E/electric_bike.png'
+import happySoftwareEngineer from '/img/DALL-E/happy_software_engineer.png'
+import hiker from '/img/DALL-E/hiker.png'
+import logoWebsite from '/img/DALL-E/logo_website.png'
+import mlArchitecture from '/img/DALL-E/ML_architecture.png'
+import runner from '/img/DALL-E/runner.png'
+import tokyo from '/img/DALL-E/tokyo.png'
+import triathlon from '/img/DALL-E/triathlon.png'
 
 const AIGallery: React.FC = () => {
 

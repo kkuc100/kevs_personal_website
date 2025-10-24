@@ -44,7 +44,7 @@ const About: React.FC = () => {
         <Grid item xs={12} md={6}>
           <Box
             component="img"
-            src="/assets/img/canada.jpg"
+            src="/img/canada.jpg"
             alt="About"
             sx={{
               width: '100%',

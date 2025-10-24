@@ -5,47 +5,47 @@ const AIGallery: React.FC = () => {
 
   const aiImages = [
     {
-      src: '/assets/img/DALL-E/coffee_shop_working.png',
+      src: './assets/img/DALL-E/coffee_shop_working.png',
       title: 'Coffee Shop Working',
       description: 'AI-generated image of a productive workspace in a cozy coffee shop',
     },
     {
-      src: '/assets/img/DALL-E/electric_bike.png',
+      src: './assets/img/DALL-E/electric_bike.png',
       title: 'Electric Bike',
       description: 'Modern electric bike design showcasing sustainable transportation',
     },
     {
-      src: '/assets/img/DALL-E/happy_software_engineer.png',
+      src: './assets/img/DALL-E/happy_software_engineer.png',
       title: 'Happy Software Engineer',
       description: 'Portrait of a satisfied software engineer celebrating successful code',
     },
     {
-      src: '/assets/img/DALL-E/hiker.png',
+      src: './assets/img/DALL-E/hiker.png',
       title: 'Hiker',
       description: 'AI-generated image of an adventurous hiker exploring nature trails',
     },
     {
-      src: '/assets/img/DALL-E/logo_website.png',
+      src: './assets/img/DALL-E/logo_website.png',
       title: 'Website Logo',
       description: 'Creative logo design for web development and digital presence',
     },
     {
-      src: '/assets/img/DALL-E/ML_architecture.png',
+      src: './assets/img/DALL-E/ML_architecture.png',
       title: 'ML Architecture',
       description: 'Visual representation of machine learning system architecture',
     },
     {
-      src: '/assets/img/DALL-E/runner.png',
+      src: './assets/img/DALL-E/runner.png',
       title: 'Runner',
       description: 'Dynamic image of a runner in motion, representing perseverance',
     },
     {
-      src: '/assets/img/DALL-E/tokyo.png',
+      src: './assets/img/DALL-E/tokyo.png',
       title: 'Tokyo',
       description: 'AI-generated cityscape of Tokyo with its vibrant urban landscape',
     },
     {
-      src: '/assets/img/DALL-E/triathlon.png',
+      src: './assets/img/DALL-E/triathlon.png',
       title: 'Triathlon',
       description: 'Multi-sport athlete competing in a challenging triathlon event',
     },

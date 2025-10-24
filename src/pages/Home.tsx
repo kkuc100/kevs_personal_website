@@ -46,7 +46,7 @@ const Home: React.FC = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: `linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url('/assets/img/hero-bg.jpg') center top no-repeat`,
+          background: `linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url('./assets/img/hero-bg.jpg') center top no-repeat`,
           backgroundSize: 'cover',
           position: 'relative',
           '&::after': {
@@ -69,7 +69,7 @@ const Home: React.FC = () => {
             top: 0,
             width: '130%',
             height: '95%',
-            background: `linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url('/assets/img/hero-bg.jpg') center top no-repeat`,
+            background: `linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url('./assets/img/hero-bg.jpg') center top no-repeat`,
             zIndex: 0,
             borderRadius: '0 0 50% 50%',
             transform: 'translateX(-50%) rotate(0deg)',

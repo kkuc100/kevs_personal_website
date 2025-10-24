@@ -116,17 +116,6 @@ const AIGallery: React.FC = () => {
         ))}
       </Grid>
 
-      {/* Additional Info */}
-      <Paper sx={{ p: 4, mt: 4, textAlign: 'center' }}>
-        <Typography variant="h6" gutterBottom>
-          About AI Art Generation
-        </Typography>
-        <Typography variant="body1" color="text.secondary">
-          These images were generated using advanced AI models including DALL-E, demonstrating the creative potential 
-          of artificial intelligence in visual art. Each image represents a unique blend of algorithmic creativity 
-          and human imagination, showcasing the evolving landscape of AI-assisted artistic expression.
-        </Typography>
-      </Paper>
     </Container>
   )
 }

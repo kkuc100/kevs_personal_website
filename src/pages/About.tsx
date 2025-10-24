@@ -14,10 +14,10 @@ const About: React.FC = () => {
   ]
 
   const skills = [
-    { name: 'Python', level: 80 },
-    { name: 'Hugging Face', level: 60 },
-    { name: 'MySQL', level: 40 },
-    { name: 'HTML', level: 30 },
+    { name: 'Python', level: 95 },
+    { name: 'Hugging Face', level: 85 },
+    { name: 'MySQL', level: 75 },
+    { name: 'HTML', level: 90 },
   ]
 
   const achievements = [

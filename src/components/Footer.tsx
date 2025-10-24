@@ -31,16 +31,6 @@ const Footer: React.FC = () => {
             </Box>
           </Grid>
           
-          <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" sx={{ mb: 2, color: theme.palette.primary.light }}>
-              Our Services
-            </Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-              <Link href="/contact" color="inherit" sx={{ textDecoration: 'none', '&:hover': { color: theme.palette.primary.light } }}>
-                Web Design
-              </Link>
-            </Box>
-          </Grid>
           
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" sx={{ mb: 2, color: theme.palette.primary.light }}>

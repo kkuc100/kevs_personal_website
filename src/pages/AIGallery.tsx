@@ -1,62 +1,51 @@
 import React from 'react'
 import { Container, Typography, Box, Grid, Paper } from '@mui/material'
 
-// Import images - Vite will process these and provide optimized URLs
-import coffeeShopWorking from '/img/DALL-E/coffee_shop_working.png'
-import electricBike from '/img/DALL-E/electric_bike.png'
-import happySoftwareEngineer from '/img/DALL-E/happy_software_engineer.png'
-import hiker from '/img/DALL-E/hiker.png'
-import logoWebsite from '/img/DALL-E/logo_website.png'
-import mlArchitecture from '/img/DALL-E/ML_architecture.png'
-import runner from '/img/DALL-E/runner.png'
-import tokyo from '/img/DALL-E/tokyo.png'
-import triathlon from '/img/DALL-E/triathlon.png'
-
 const AIGallery: React.FC = () => {
 
   const aiImages = [
     {
-      src: coffeeShopWorking,
+      src: '/img/DALL-E/coffee_shop_working.png',
       title: 'Coffee Shop Working',
       description: 'AI-generated image of a productive workspace in a cozy coffee shop',
     },
     {
-      src: electricBike,
+      src: '/img/DALL-E/electric_bike.png',
       title: 'Electric Bike',
       description: 'Modern electric bike design showcasing sustainable transportation',
     },
     {
-      src: happySoftwareEngineer,
+      src: '/img/DALL-E/happy_software_engineer.png',
       title: 'Happy Software Engineer',
       description: 'Portrait of a satisfied software engineer celebrating successful code',
     },
     {
-      src: hiker,
+      src: '/img/DALL-E/hiker.png',
       title: 'Hiker',
       description: 'AI-generated image of an adventurous hiker exploring nature trails',
     },
     {
-      src: logoWebsite,
+      src: '/img/DALL-E/logo_website.png',
       title: 'Website Logo',
       description: 'Creative logo design for web development and digital presence',
     },
     {
-      src: mlArchitecture,
+      src: '/img/DALL-E/ML_architecture.png',
       title: 'ML Architecture',
       description: 'Visual representation of machine learning system architecture',
     },
     {
-      src: runner,
+      src: '/img/DALL-E/runner.png',
       title: 'Runner',
       description: 'Dynamic image of a runner in motion, representing perseverance',
     },
     {
-      src: tokyo,
+      src: '/img/DALL-E/tokyo.png',
       title: 'Tokyo',
       description: 'AI-generated cityscape of Tokyo with its vibrant urban landscape',
     },
     {
-      src: triathlon,
+      src: '/img/DALL-E/triathlon.png',
       title: 'Triathlon',
       description: 'Multi-sport athlete competing in a challenging triathlon event',
     },

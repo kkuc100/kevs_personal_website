@@ -1,51 +1,62 @@
 import React from 'react'
 import { Container, Typography, Box, Grid, Paper } from '@mui/material'
 
+// Import images
+import coffeeShopWorking from '/assets/img/DALL-E/coffee_shop_working.png'
+import electricBike from '/assets/img/DALL-E/electric_bike.png'
+import happySoftwareEngineer from '/assets/img/DALL-E/happy_software_engineer.png'
+import hiker from '/assets/img/DALL-E/hiker.png'
+import logoWebsite from '/assets/img/DALL-E/logo_website.png'
+import mlArchitecture from '/assets/img/DALL-E/ML_architecture.png'
+import runner from '/assets/img/DALL-E/runner.png'
+import tokyo from '/assets/img/DALL-E/tokyo.png'
+import triathlon from '/assets/img/DALL-E/triathlon.png'
+
 const AIGallery: React.FC = () => {
 
   const aiImages = [
     {
-      src: './assets/img/DALL-E/coffee_shop_working.png',
+      src: coffeeShopWorking,
       title: 'Coffee Shop Working',
       description: 'AI-generated image of a productive workspace in a cozy coffee shop',
     },
     {
-      src: './assets/img/DALL-E/electric_bike.png',
+      src: electricBike,
       title: 'Electric Bike',
       description: 'Modern electric bike design showcasing sustainable transportation',
     },
     {
-      src: './assets/img/DALL-E/happy_software_engineer.png',
+      src: happySoftwareEngineer,
       title: 'Happy Software Engineer',
       description: 'Portrait of a satisfied software engineer celebrating successful code',
     },
     {
-      src: './assets/img/DALL-E/hiker.png',
+      src: hiker,
       title: 'Hiker',
       description: 'AI-generated image of an adventurous hiker exploring nature trails',
     },
     {
-      src: './assets/img/DALL-E/logo_website.png',
+      src: logoWebsite,
       title: 'Website Logo',
       description: 'Creative logo design for web development and digital presence',
     },
     {
-      src: './assets/img/DALL-E/ML_architecture.png',
+      src: mlArchitecture,
       title: 'ML Architecture',
       description: 'Visual representation of machine learning system architecture',
     },
     {
-      src: './assets/img/DALL-E/runner.png',
+      src: runner,
       title: 'Runner',
       description: 'Dynamic image of a runner in motion, representing perseverance',
     },
     {
-      src: './assets/img/DALL-E/tokyo.png',
+      src: tokyo,
       title: 'Tokyo',
       description: 'AI-generated cityscape of Tokyo with its vibrant urban landscape',
     },
     {
-      src: './assets/img/DALL-E/triathlon.png',
+      src: triathlon,
       title: 'Triathlon',
       description: 'Multi-sport athlete competing in a challenging triathlon event',
     },

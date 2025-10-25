@@ -8,47 +8,47 @@ const AIGallery: React.FC = () => {
 
   const aiImages = [
     {
-      src: getImageSrc('/img/DALL-E/coffee_shop_working.png'),
+      src: getImageSrc('/img/coffee_shop_working.png'),
       title: 'Coffee Shop Working',
       description: 'AI-generated image of a productive workspace in a cozy coffee shop',
     },
     {
-      src: getImageSrc('/img/DALL-E/electric_bike.png'),
+      src: getImageSrc('/img/electric_bike.png'),
       title: 'Electric Bike',
       description: 'Modern electric bike design showcasing sustainable transportation',
     },
     {
-      src: getImageSrc('/img/DALL-E/happy_software_engineer.png'),
+      src: getImageSrc('/img/happy_software_engineer.png'),
       title: 'Happy Software Engineer',
       description: 'Portrait of a satisfied software engineer celebrating successful code',
     },
     {
-      src: getImageSrc('/img/DALL-E/hiker.png'),
+      src: getImageSrc('/img/hiker.png'),
       title: 'Hiker',
       description: 'AI-generated image of an adventurous hiker exploring nature trails',
     },
     {
-      src: getImageSrc('/img/DALL-E/logo_website.png'),
+      src: getImageSrc('/img/logo_website.png'),
       title: 'Website Logo',
       description: 'Creative logo design for web development and digital presence',
     },
     {
-      src: getImageSrc('/img/DALL-E/ML_architecture.png'),
+      src: getImageSrc('/img/ML_architecture.png'),
       title: 'ML Architecture',
       description: 'Visual representation of machine learning system architecture',
     },
     {
-      src: getImageSrc('/img/DALL-E/runner.png'),
+      src: getImageSrc('/img/runner.png'),
       title: 'Runner',
       description: 'Dynamic image of a runner in motion, representing perseverance',
     },
     {
-      src: getImageSrc('/img/DALL-E/tokyo.png'),
+      src: getImageSrc('/img/tokyo.png'),
       title: 'Tokyo',
       description: 'AI-generated cityscape of Tokyo with its vibrant urban landscape',
     },
     {
-      src: getImageSrc('/img/DALL-E/triathlon.png'),
+      src: getImageSrc('/img/triathlon.png'),
       title: 'Triathlon',
       description: 'Multi-sport athlete competing in a challenging triathlon event',
     },

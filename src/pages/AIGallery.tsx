@@ -1,51 +1,52 @@
 import React from 'react'
 import { Container, Typography, Box, Grid, Paper } from '@mui/material'
+import { getImagePath } from '../utils/imageUtils'
 
 const AIGallery: React.FC = () => {
 
   const aiImages = [
     {
-      src: '/img/coffee_shop_working.png',
+      src: getImagePath('/img/coffee_shop_working.png'),
       title: 'Coffee Shop Working',
       description: 'AI-generated image of a productive workspace in a cozy coffee shop',
     },
     {
-      src: '/img/electric_bike.png',
+      src: getImagePath('/img/electric_bike.png'),
       title: 'Electric Bike',
       description: 'Modern electric bike design showcasing sustainable transportation',
     },
     {
-      src: '/img/happy_software_engineer.png',
+      src: getImagePath('/img/happy_software_engineer.png'),
       title: 'Happy Software Engineer',
       description: 'Portrait of a satisfied software engineer celebrating successful code',
     },
     {
-      src: '/img/hiker.png',
+      src: getImagePath('/img/hiker.png'),
       title: 'Hiker',
       description: 'AI-generated image of an adventurous hiker exploring nature trails',
     },
     {
-      src: '/img/logo_website.png',
+      src: getImagePath('/img/logo_website.png'),
       title: 'Website Logo',
       description: 'Creative logo design for web development and digital presence',
     },
     {
-      src: '/img/ML_architecture.png',
+      src: getImagePath('/img/ML_architecture.png'),
       title: 'ML Architecture',
       description: 'Visual representation of machine learning system architecture',
     },
     {
-      src: '/img/runner.png',
+      src: getImagePath('/img/runner.png'),
       title: 'Runner',
       description: 'Dynamic image of a runner in motion, representing perseverance',
     },
     {
-      src: '/img/tokyo.png',
+      src: getImagePath('/img/tokyo.png'),
       title: 'Tokyo',
       description: 'AI-generated cityscape of Tokyo with its vibrant urban landscape',
     },
     {
-      src: '/img/triathlon.png',
+      src: getImagePath('/img/triathlon.png'),
       title: 'Triathlon',
       description: 'Multi-sport athlete competing in a challenging triathlon event',
     },

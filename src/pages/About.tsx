@@ -2,10 +2,11 @@ import React from 'react'
 import { Container, Typography, Box, Grid, Paper, LinearProgress } from '@mui/material'
 import { CheckCircle } from '@mui/icons-material'
 import { useTheme } from '@mui/material/styles'
+import { getImagePath } from '../utils/imageUtils'
 
 const About: React.FC = () => {
   const theme = useTheme()
-  const canadaImagePath = '/img/canada.jpg'
+  const canadaImagePath = getImagePath('/img/canada.jpg')
 
   const facts = [
     { number: 3, label: 'Clients' },

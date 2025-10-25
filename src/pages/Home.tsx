@@ -2,10 +2,11 @@ import React from 'react'
 import { Box, Container, Typography, Grid, Card, CardContent, CardActions, Button } from '@mui/material'
 import { Description, Public, EmojiEmotions, Code } from '@mui/icons-material'
 import { useTheme } from '@mui/material/styles'
+import { getImagePath } from '../utils/imageUtils'
 
 const Home: React.FC = () => {
   const theme = useTheme()
-  const heroBgPath = '/img/hero-bg.jpg'
+  const heroBgPath = getImagePath('/img/hero-bg.jpg')
 
   const services = [
     {

@@ -1,9 +1,7 @@
 // Utility function to get the correct image path based on environment
 export const getImagePath = (imagePath: string): string => {
-  // In production, we need to account for the base path
-  if (import.meta.env.PROD) {
-    return `/kevs_personal_website${imagePath}`
-  }
-  // In development, use the path as-is
-  return imagePath
+  // Vite automatically handles the base path via BASE_URL
+  // Just ensure the path starts with /
+  const cleanPath = imagePath.startsWith('/') ? imagePath : `/${imagePath}`
+  return `${import.meta.env.BASE_URL}${cleanPath.substring(1)}`
 }

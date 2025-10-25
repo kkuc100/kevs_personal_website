@@ -30,7 +30,7 @@ const About: React.FC = () => {
   ]
 
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
+    <Container maxWidth="lg" sx={{ py: 4, marginTop: '80px' }}>
       {/* Breadcrumb */}
       <Box sx={{ mb: 4, py: 2, backgroundColor: '#f3f8fa' }}>
         <Typography variant="h4" gutterBottom>

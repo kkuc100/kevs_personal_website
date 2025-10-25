@@ -44,39 +44,15 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <Box
         sx={{
-          height: '90vh',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
+          minHeight: '100vh',
           background: `linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url('${heroBgPath}') center top no-repeat`,
           backgroundSize: 'cover',
           position: 'relative',
           overflowX: 'hidden',
-          '&::after': {
-            content: '""',
-            position: 'absolute',
-            left: '50%',
-            top: 0,
-            width: '130%',
-            height: '96%',
-            background: theme.palette.primary.main,
-            opacity: 0.3,
-            zIndex: 0,
-            borderRadius: '0 0 50% 50%',
-            transform: 'translateX(-50%) translateY(18px) rotate(2deg)',
-          },
-          '&::before': {
-            content: '""',
-            position: 'absolute',
-            left: '50%',
-            top: 0,
-            width: '130%',
-            height: '95%',
-            background: `linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url('${heroBgPath}') center top no-repeat`,
-            zIndex: 0,
-            borderRadius: '0 0 50% 50%',
-            transform: 'translateX(-50%) rotate(0deg)',
-          },
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          paddingTop: '80px',
         }}
       >
         <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>

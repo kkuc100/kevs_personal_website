@@ -19,7 +19,7 @@ const About: React.FC = () => {
     { name: 'Python', level: 95 },
     { name: 'Hugging Face', level: 85 },
     { name: 'MySQL', level: 75 },
-    { name: 'HTML', level: 90 },
+    { name: 'React', level: 90 },
   ]
 
   const achievements = [
@@ -47,7 +47,7 @@ const About: React.FC = () => {
           <Box
             component="img"
             src={canadaImagePath}
-            alt="About"
+            alt="Kevin Kuc - Data Scientist and AI Engineer professional photo"
             sx={{
               width: '100%',
               height: 'auto',

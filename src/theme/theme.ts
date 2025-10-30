@@ -2,85 +2,107 @@ import { createTheme } from '@mui/material/styles'
 
 const theme = createTheme({
   palette: {
+    mode: 'dark',
     primary: {
-      main: '#68A4C4',
-      light: '#85b6cf',
-      dark: '#1e4356',
+      main: '#7c3aed', // violet-600
+      light: '#a78bfa',
+      dark: '#5b21b6',
     },
     secondary: {
-      main: '#4fa6d5',
-      light: '#45beff',
+      main: '#06b6d4', // cyan-500
+      light: '#22d3ee',
+      dark: '#0891b2',
     },
     background: {
-      default: '#f3f8fa',
-      paper: '#fff',
+      default: '#0b0f19', // base canvas
+      paper: '#111827', // elevated surfaces
     },
     text: {
-      primary: '#444',
-      secondary: '#666',
+      primary: '#e5e7eb',
+      secondary: '#9ca3af',
     },
+    divider: 'rgba(148,163,184,0.2)'
   },
   typography: {
-    fontFamily: '"Open Sans", "Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: 'Inter, "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
     h1: {
-      fontFamily: '"Roboto", sans-serif',
-      fontWeight: 700,
+      fontWeight: 800,
       fontSize: '48px',
+      letterSpacing: '-0.02em',
     },
     h2: {
-      fontFamily: '"Roboto", sans-serif',
       fontWeight: 700,
-      fontSize: '28px',
+      fontSize: '32px',
+      letterSpacing: '-0.01em',
     },
     h3: {
-      fontFamily: '"Roboto", sans-serif',
-      fontWeight: 400,
-      fontSize: '26px',
+      fontWeight: 600,
+      fontSize: '24px',
     },
     h4: {
-      fontFamily: '"Roboto", sans-serif',
       fontWeight: 600,
       fontSize: '18px',
     },
     body1: {
-      fontFamily: '"Open Sans", sans-serif',
+      fontSize: '16px',
+      lineHeight: 1.7,
+    },
+    body2: {
       fontSize: '14px',
       lineHeight: 1.6,
-    },
+    }
   },
   components: {
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: '#1e4356',
-          boxShadow: 'none',
+          backgroundColor: '#0b0f19',
+          backgroundImage: 'linear-gradient(to right, rgba(124,58,237,0.12), rgba(6,182,212,0.12))',
+          boxShadow: '0 1px 0 0 rgba(148,163,184,0.12)'
         },
       },
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: '50px',
+          borderRadius: '10px',
           textTransform: 'none',
-          fontWeight: 500,
-          padding: '12px 32px',
+          fontWeight: 600,
+          padding: '10px 18px',
         },
-        contained: {
-          backgroundColor: '#68A4C4',
+        containedPrimary: {
+          backgroundImage: 'linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%)',
+          color: '#0b0f19',
           '&:hover': {
-            backgroundColor: '#85b6cf',
-          },
+            filter: 'brightness(1.05)'
+          }
         },
+        outlined: {
+          borderColor: 'rgba(124,58,237,0.5)',
+          '&:hover': {
+            borderColor: '#7c3aed',
+            backgroundColor: 'rgba(124,58,237,0.08)'
+          }
+        }
       },
     },
     MuiCard: {
       styleOverrides: {
         root: {
-          boxShadow: '0 5px 26px 0 rgba(68, 88, 144, 0.14)',
-          borderRadius: '8px',
+          background: 'linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00))',
+          boxShadow: '0 10px 30px rgba(0,0,0,0.35)',
+          borderRadius: '14px',
+          border: '1px solid rgba(148,163,184,0.12)'
         },
       },
     },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          backgroundImage: 'none',
+        }
+      }
+    }
   },
 })
 

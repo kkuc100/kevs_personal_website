@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Container, Typography, Grid, Card, CardContent, CardActions, Button } from '@mui/material'
+import { Box, Container, Typography, Grid, Card, CardContent, CardActions, Button, Stack } from '@mui/material'
 import { Description, Public, EmojiEmotions, Code } from '@mui/icons-material'
 import { useTheme } from '@mui/material/styles'
 import { getImagePath } from '../utils/imageUtils'
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
       <Box
         sx={{
           minHeight: '100vh',
-          background: `linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url('${heroBgPath}') center top no-repeat`,
+          background: `linear-gradient(90deg, rgba(12,14,24,0.9) 0%, rgba(17,24,39,0.85) 40%, rgba(124,58,237,0.18) 100%), url('${heroBgPath}') center top no-repeat`,
           backgroundSize: 'cover',
           position: 'relative',
           overflowX: 'hidden',
@@ -64,7 +64,7 @@ const Home: React.FC = () => {
               fontSize: { xs: '30px', md: '48px' },
             }}
           >
-            Welcome to <span style={{ color: theme.palette.primary.main }}>Kevin Kuc's Portfolio</span>
+            Building Intelligent Systems with Data
           </Typography>
           <Typography
             variant="h6"
@@ -75,15 +75,38 @@ const Home: React.FC = () => {
               fontSize: { xs: '16px', md: '18px' },
             }}
           >
-            Welcome to my digital portfolio, a curated collection showcasing the intersection of data science and innovation. I am passionate about leveraging data to uncover insights and drive meaningful decisions.
+            I’m Kevin, a senior data scientist focused on NLP, predictive modeling, and production ML. I turn raw data into deployable, measurable impact.
           </Typography>
+          <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mt: 4, justifyContent: 'center' }}>
+            <Button
+              variant="contained"
+              color="primary"
+              href="https://github.com/kkuc100"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View GitHub
+            </Button>
+            <Button
+              variant="contained"
+              color="secondary"
+              href="https://www.linkedin.com/in/kevinkuc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Connect on LinkedIn
+            </Button>
+          </Stack>
         </Container>
       </Box>
 
-      {/* Services Section */}
+      {/* Featured Projects Section */}
       <Container maxWidth="lg" sx={{ py: 8 }}>
+        <Typography variant="h4" sx={{ mb: 3, textAlign: 'center' }}>
+          Featured Projects
+        </Typography>
         <Grid container spacing={4}>
-          {services.map((service, index) => (
+          {services.slice(0, 2).map((service, index) => (
             <Grid item xs={12} sm={6} md={3} key={index}>
               <Card
                 sx={{
@@ -94,7 +117,7 @@ const Home: React.FC = () => {
                   transition: 'all 0.3s ease-in-out',
                   '&:hover': {
                     transform: 'translateY(-5px)',
-                    boxShadow: '0 10px 30px rgba(68, 88, 144, 0.2)',
+                    boxShadow: '0 10px 30px rgba(0,0,0,0.35)',
                   },
                 }}
               >
@@ -109,11 +132,10 @@ const Home: React.FC = () => {
                       justifyContent: 'center',
                       mx: 'auto',
                       mb: 2,
-                      backgroundColor: service.color === '#3fcdc7' ? '#e6fdfc' : 
-                                      service.color === '#41cf2e' ? '#eafde7' : '#e1eeff',
+                      backgroundColor: 'rgba(124,58,237,0.12)',
                     }}
                   >
-                    <Box sx={{ color: service.color, fontSize: '36px' }}>
+                    <Box sx={{ color: theme.palette.primary.light, fontSize: '36px' }}>
                       {service.icon}
                     </Box>
                   </Box>
@@ -133,12 +155,11 @@ const Home: React.FC = () => {
                       variant="outlined"
                       size="small"
                       sx={{
-                        borderColor: service.color,
-                        color: service.color,
+                        borderColor: theme.palette.primary.main,
+                        color: theme.palette.primary.light,
                         '&:hover': {
-                          borderColor: service.color,
-                          backgroundColor: service.color,
-                          color: 'white',
+                          borderColor: theme.palette.primary.main,
+                          backgroundColor: 'rgba(124,58,237,0.12)',
                         },
                       }}
                     >
@@ -150,6 +171,15 @@ const Home: React.FC = () => {
             </Grid>
           ))}
         </Grid>
+        <Stack direction="row" justifyContent="center" sx={{ mt: 4 }}>
+          <Button
+            variant="outlined"
+            color="primary"
+            href="/projects"
+          >
+            View all projects
+          </Button>
+        </Stack>
       </Container>
     </Box>
   )

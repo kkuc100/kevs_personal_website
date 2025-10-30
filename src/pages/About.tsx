@@ -9,10 +9,10 @@ const About: React.FC = () => {
   const canadaImagePath = getImagePath('/img/canada.jpg')
 
   const facts = [
-    { number: 3, label: 'Clients' },
-    { number: 23, label: 'Projects' },
-    { number: 300, label: 'Project Hours Worked' },
-    { number: 21, label: 'Masters of Data Science Credits' },
+    { number: 5, label: 'Clients' },
+    { number: 37, label: 'Projects' },
+    { number: 320, label: 'Project Hours Worked' },
+    { number: 27, label: 'Masters of Data Science Credits' },
   ]
 
   const skills = [
@@ -32,11 +32,20 @@ const About: React.FC = () => {
   return (
     <Container maxWidth="lg" sx={{ py: 4, marginTop: '80px' }}>
       {/* Breadcrumb */}
-      <Box sx={{ mb: 4, py: 2, backgroundColor: '#f3f8fa' }}>
-        <Typography variant="h4" gutterBottom>
+      <Box
+        sx={{
+          mb: 4,
+          py: 4,
+          px: 3,
+          borderRadius: 2,
+          background: 'linear-gradient(90deg, rgba(124,58,237,0.18) 0%, rgba(6,182,212,0.12) 100%)',
+          border: '1px solid rgba(148,163,184,0.12)'
+        }}
+      >
+        <Typography variant="h4" gutterBottom sx={{ color: 'text.primary' }}>
           About Me
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
           Home / About Me
         </Typography>
       </Box>
@@ -76,7 +85,7 @@ const About: React.FC = () => {
       </Grid>
 
       {/* Facts Section */}
-      <Paper sx={{ p: 4, mb: 6, backgroundColor: '#f3f8fa' }}>
+      <Paper sx={{ p: 4, mb: 6, backgroundColor: 'rgba(255,255,255,0.02)', border: '1px solid rgba(148,163,184,0.12)' }}>
         <Grid container spacing={4}>
           {facts.map((fact, index) => (
             <Grid item xs={6} md={3} key={index}>
@@ -85,13 +94,13 @@ const About: React.FC = () => {
                   variant="h2"
                   sx={{
                     fontSize: '48px',
-                    color: theme.palette.primary.main,
+                    color: theme.palette.primary.light,
                     fontWeight: 'bold',
                   }}
                 >
                   {fact.number}
                 </Typography>
-                <Typography variant="body2" sx={{ fontSize: '14px' }}>
+                <Typography variant="body2" sx={{ fontSize: '14px', color: 'text.secondary' }}>
                   {fact.label}
                 </Typography>
               </Box>
@@ -101,7 +110,7 @@ const About: React.FC = () => {
       </Paper>
 
       {/* Skills Section */}
-      <Paper sx={{ p: 4 }}>
+      <Paper sx={{ p: 4, backgroundColor: 'rgba(255,255,255,0.02)', border: '1px solid rgba(148,163,184,0.12)' }}>
         <Typography variant="h4" gutterBottom sx={{ textAlign: 'center', mb: 4 }}>
           My Skills
         </Typography>
@@ -126,7 +135,7 @@ const About: React.FC = () => {
                 sx={{
                   height: 8,
                   borderRadius: 4,
-                  backgroundColor: '#e0e0e0',
+                  backgroundColor: 'rgba(148,163,184,0.18)',
                   '& .MuiLinearProgress-bar': {
                     backgroundColor: theme.palette.primary.main,
                   },

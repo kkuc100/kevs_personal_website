@@ -12,6 +12,8 @@ dist-ssr/
 build/
 *.local
 
+ReadMe/
+
 # Environment variables
 .env
 .env.local

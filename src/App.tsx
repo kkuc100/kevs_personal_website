@@ -5,7 +5,8 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import AIGallery from './pages/AIGallery'
+// Removed AI Gallery
+import Projects from './pages/Projects'
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/ai-gallery" element={<AIGallery />} />
+          {/* AI Gallery route removed */}
         </Routes>
       </Box>
       <Footer />

@@ -16,7 +16,7 @@ const Header: React.FC = () => {
   const navigationItems = [
     { label: 'Home', path: '/' },
     { label: 'About', path: '/about' },
-    { label: 'AI Gallery', path: '/ai-gallery' },
+    { label: 'Projects', path: '/projects' },
     { label: 'Contact', path: '/contact' },
   ]
 
@@ -58,21 +58,20 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <AppBar position="fixed" sx={{ backgroundColor: '#1e4356' }}>
+      <AppBar position="fixed" color="default" enableColorOnDark>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           <Typography
             variant="h6"
             component="div"
             sx={{
-              fontFamily: '"Roboto", sans-serif',
-              fontSize: '28px',
-              fontWeight: 400,
-              letterSpacing: '3px',
-              textTransform: 'uppercase',
+              fontFamily: 'Inter, sans-serif',
+              fontSize: '20px',
+              fontWeight: 700,
+              letterSpacing: '-0.02em',
             }}
           >
-            <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
-              Kevin Kuc
+            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+              Kevin Kuc · Senior Data Scientist
             </Link>
           </Typography>
           
@@ -87,19 +86,19 @@ const Header: React.FC = () => {
               <MenuIcon />
             </IconButton>
           ) : (
-            <Box sx={{ display: 'flex', gap: 2 }}>
+            <Box sx={{ display: 'flex', gap: 3 }}>
               {navigationItems.map((item) => (
                 <Typography
                   key={item.path}
                   component={Link}
                   to={item.path}
                   sx={{
-                    color: 'white',
+                    color: isActive(item.path) ? theme.palette.primary.light : 'inherit',
                     textDecoration: 'none',
                     fontSize: '14px',
-                    fontWeight: isActive(item.path) ? 'bold' : 'normal',
+                    fontWeight: isActive(item.path) ? 700 : 500,
                     '&:hover': {
-                      color: theme.palette.primary.light,
+                      color: theme.palette.secondary.main,
                     },
                   }}
                 >

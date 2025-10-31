@@ -9,11 +9,20 @@ const Contact: React.FC = () => {
   return (
     <Container maxWidth="lg" sx={{ py: 4, marginTop: '80px' }}>
       {/* Breadcrumb */}
-      <Box sx={{ mb: 4, py: 2, backgroundColor: '#f3f8fa' }}>
-        <Typography variant="h4" gutterBottom>
+      <Box
+        sx={{
+          mb: 4,
+          py: 4,
+          px: 3,
+          borderRadius: 2,
+          background: 'linear-gradient(90deg, rgba(124,58,237,0.18) 0%, rgba(6,182,212,0.12) 100%)',
+          border: '1px solid rgba(148,163,184,0.12)'
+        }}
+      >
+        <Typography variant="h4" gutterBottom sx={{ color: 'text.primary' }}>
           Contact
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
           Home / Contact
         </Typography>
       </Box>
@@ -23,20 +32,20 @@ const Contact: React.FC = () => {
         <Grid item xs={12} md={6}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
-              <Card sx={{ textAlign: 'center', p: 2 }}>
+              <Card sx={{ textAlign: 'center', p: 2, backgroundColor: 'rgba(255,255,255,0.02)', border: '1px solid rgba(148,163,184,0.12)' }}>
                 <CardContent>
                   <LocationOn sx={{ fontSize: 32, color: theme.palette.primary.main, mb: 1 }} />
                   <Typography variant="h6" gutterBottom>
                     My Address
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Holly Ridge, NC 28445
+                    Miami, FL 33101
                   </Typography>
                 </CardContent>
               </Card>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <Card sx={{ textAlign: 'center', p: 2 }}>
+              <Card sx={{ textAlign: 'center', p: 2, backgroundColor: 'rgba(255,255,255,0.02)', border: '1px solid rgba(148,163,184,0.12)' }}>
                 <CardContent>
                   <Email sx={{ fontSize: 32, color: theme.palette.primary.main, mb: 1 }} />
                   <Typography variant="h6" gutterBottom>
@@ -49,7 +58,7 @@ const Contact: React.FC = () => {
               </Card>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <Card sx={{ textAlign: 'center', p: 2 }}>
+              <Card sx={{ textAlign: 'center', p: 2, backgroundColor: 'rgba(255,255,255,0.02)', border: '1px solid rgba(148,163,184,0.12)' }}>
                 <CardContent>
                   <Phone sx={{ fontSize: 32, color: theme.palette.primary.main, mb: 1 }} />
                   <Typography variant="h6" gutterBottom>
@@ -65,7 +74,7 @@ const Contact: React.FC = () => {
         </Grid>
 
         <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 2 }}>
+          <Paper sx={{ p: 2, backgroundColor: 'rgba(255,255,255,0.02)', border: '1px solid rgba(148,163,184,0.12)' }}>
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSeY5CuN-bw9fHxOYK5hCFZdqPFPkKqFdfZao0AEkEz3QhYnoA/viewform?embedded=true"
               width="100%"
@@ -82,9 +91,9 @@ const Contact: React.FC = () => {
       </Grid>
 
       {/* Map Section */}
-      <Paper sx={{ p: 0, overflow: 'hidden' }}>
+      <Paper sx={{ p: 0, overflow: 'hidden', backgroundColor: 'rgba(255,255,255,0.02)', border: '1px solid rgba(148,163,184,0.12)' }}>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52608.38197455592!2d-77.56833554313936!3d34.50227903538051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a9a1f949f8c091%3A0x826089cf65ba567e!2sHolly%20Ridge%2C%20NC%2028445!5e0!3m2!1sen!2sus!4v1702847807301!5m2!1sen!2sus"
+          src="https://www.google.com/maps?q=Miami,%20FL&output=embed"
           width="100%"
           height="450"
           style={{ border: 0 }}

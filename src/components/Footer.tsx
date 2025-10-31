@@ -47,7 +47,9 @@ const Footer: React.FC = () => {
               <strong>Email:</strong> kkuc234@gmail.com
             </Typography>
             <Link 
-              href="https://github.com/kkuc100/personal_projects" 
+              href="https://github.com/kkuc100" 
+              target="_blank"
+              rel="noopener noreferrer"
               color="inherit" 
               sx={{ textDecoration: 'none', '&:hover': { color: theme.palette.secondary.main } }}
             >

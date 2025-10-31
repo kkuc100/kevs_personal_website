@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Container, Typography, Grid, Card, CardContent, CardActions, Button, Stack } from '@mui/material'
-import { Description, Public, EmojiEmotions, Code } from '@mui/icons-material'
+import { SmartToy, TrendingUp, Gavel, Psychology } from '@mui/icons-material'
 import { useTheme } from '@mui/material/styles'
 import { getImagePath } from '../utils/imageUtils'
 
@@ -8,34 +8,30 @@ const Home: React.FC = () => {
   const theme = useTheme()
   const heroBgPath = getImagePath('/img/hero-bg.jpg')
 
-  const services = [
+  const featuredProjects = [
     {
-      icon: <Description />,
-      title: 'Resume Generator',
-      description: 'Revolutionize your job application process with our AI-powered Resume Generator, seamlessly transforming your career information into polished, professional resumes through advanced natural language processing and machine learning algorithms.',
-      link: 'https://github.com/kkuc100/resume_generator',
-      color: '#3fcdc7',
-    },
-    {
-      icon: <Public />,
-      title: 'GPS Converter',
-      description: 'This Python script simplifies the process of calculating Earth-Centered, Earth-Fixed (ECEF) velocities from latitude, longitude, and altitude (LLA) data in a CSV file, offering users an intuitive solution for geospatial analysis with streamlined functionality and automated task management.',
-      link: 'https://github.com/kkuc100/lla_ecef_coding_challenge',
-      color: '#3fcdc7',
-    },
-    {
-      icon: <EmojiEmotions />,
-      title: 'Project Happy',
-      description: 'Our project delves into the various factors influencing happiness levels in countries worldwide. Using interactive visualizations, we create an educational platform to explore the correlations between happiness and socio-economic factors, based on data from the esteemed World Happiness Report (WHR).',
-      link: 'https://apps-spring.ischool.berkeley.edu/project_happy/',
-      color: '#41cf2e',
-    },
-    {
-      icon: <Code />,
-      title: 'Future Project',
-      description: 'Future projects will unfold through a dynamic fusion of cutting-edge technologies, collaborative problem-solving, and a relentless pursuit of innovation, ensuring a continuous evolution toward impactful solutions.',
+      icon: <SmartToy />,
+      title: 'RAGMint - Decentralized AI Platform',
+      description: 'Full-stack decentralized AI platform with token-based payments on Arbitrum L2. Integrates multiple LLMs via AWS Bedrock, with React Native mobile apps, FastAPI backend, and Solidity smart contracts.',
       link: '',
-      color: '#2282ff',
+    },
+    {
+      icon: <TrendingUp />,
+      title: 'Real Estate Market Analysis',
+      description: 'Production ML system predicting property days on market using XGBoost deployed on AWS SageMaker. Serverless architecture with React frontend, Lambda proxy, and real-time predictions via API Gateway.',
+      link: '',
+    },
+    {
+      icon: <Gavel />,
+      title: 'Lawyer RAG Application',
+      description: 'Retrieval-Augmented Generation system for legal document analysis. React/TypeScript frontend with Firebase auth, AWS S3 document storage, and AI chatbot with multiple instruction modes.',
+      link: '',
+    },
+    {
+      icon: <Psychology />,
+      title: 'ClearanceAI - DISS Management',
+      description: 'AI-powered security clearance management system with intelligent recommendations, incident tracking, and multi-source CSV data integration with UUID-based linking.',
+      link: '',
     },
   ]
 
@@ -106,7 +102,7 @@ const Home: React.FC = () => {
           Featured Projects
         </Typography>
         <Grid container spacing={4}>
-          {services.slice(0, 2).map((service, index) => (
+          {featuredProjects.map((project, index) => (
             <Grid item xs={12} sm={6} md={3} key={index}>
               <Card
                 sx={{
@@ -136,20 +132,20 @@ const Home: React.FC = () => {
                     }}
                   >
                     <Box sx={{ color: theme.palette.primary.light, fontSize: '36px' }}>
-                      {service.icon}
+                      {project.icon}
                     </Box>
                   </Box>
                   <Typography variant="h6" component="h3" gutterBottom>
-                    {service.title}
+                    {project.title}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    {service.description}
+                    {project.description}
                   </Typography>
                 </CardContent>
-                {service.link && (
+                {project.link && (
                   <CardActions sx={{ justifyContent: 'center', pb: 2 }}>
                     <Button
-                      href={service.link}
+                      href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       variant="outlined"

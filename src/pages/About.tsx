@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Typography, Box, Grid, Paper, LinearProgress } from '@mui/material'
+import { Container, Typography, Box, Grid, Paper } from '@mui/material'
 import { CheckCircle } from '@mui/icons-material'
 import { useTheme } from '@mui/material/styles'
 import { getImagePath } from '../utils/imageUtils'
@@ -15,18 +15,12 @@ const About: React.FC = () => {
     { number: 27, label: 'Masters of Data Science Credits' },
   ]
 
-  const skills = [
-    { name: 'Python', level: 95 },
-    { name: 'Hugging Face', level: 85 },
-    { name: 'MySQL', level: 75 },
-    { name: 'React', level: 90 },
-  ]
-
   const achievements = [
-    'Master of Information and Data Science from the University of California, Berkeley',
-    'Bachelor of Science in Mechanical Engineering with a Mathematics minor from the University of Alabama',
-    'Applied Machine Learning projects including engineered a Long Short-Term Memory (LSTM) Model achieving 92% accuracy in predicting diabetic patient readmission rates. Trained a BERT-based NLP model for accurate sentiment analysis of movie reviews.',
-    'Skills: Python, R, SQL, HTML, CSS, Java, Javascript, neural networks, TensorFlow, PyTorch, Keras, data analysis, and more.',
+    'Master of Information and Data Science from UC Berkeley, specializing in machine learning and production ML systems',
+    'Bachelor of Science in Mechanical Engineering with Mathematics minor from the University of Alabama, providing strong analytical foundations',
+    'Built production ML systems: XGBoost model on AWS SageMaker for real estate predictions, RAG applications for legal document analysis, and decentralized AI platforms with blockchain integration',
+    'Developed deep learning models: LSTM achieving 92% accuracy for diabetic patient readmission prediction, BERT-based NLP models for sentiment analysis, and transformer architectures for various NLP tasks',
+    'Full-stack development experience: React/TypeScript frontends, FastAPI backends, serverless AWS architectures, and smart contract development on Ethereum/Arbitrum',
   ]
 
   return (
@@ -66,10 +60,10 @@ const About: React.FC = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Typography variant="h4" gutterBottom sx={{ mt: 2 }}>
-            Explore My Professional Journey
+            About Me
           </Typography>
-          <Typography variant="body1" sx={{ fontStyle: 'italic', mb: 3, color: 'text.secondary' }}>
-            Delve into my diverse experience and achievements across education, projects, and professional roles, highlighting a passion for innovation and problem-solving.
+          <Typography variant="body1" sx={{ mb: 3, color: 'text.secondary', lineHeight: 1.7 }}>
+            I'm a senior data scientist building production ML systems and AI applications. My background spans machine learning, NLP, and full-stack development, with experience deploying models to production and creating end-to-end data science solutions.
           </Typography>
           <Box>
             {achievements.map((achievement, index) => (
@@ -107,43 +101,6 @@ const About: React.FC = () => {
             </Grid>
           ))}
         </Grid>
-      </Paper>
-
-      {/* Skills Section */}
-      <Paper sx={{ p: 4, backgroundColor: 'rgba(255,255,255,0.02)', border: '1px solid rgba(148,163,184,0.12)' }}>
-        <Typography variant="h4" gutterBottom sx={{ textAlign: 'center', mb: 4 }}>
-          My Skills
-        </Typography>
-        <Typography variant="body1" sx={{ textAlign: 'center', mb: 4, maxWidth: '800px', mx: 'auto' }}>
-          With a relentless pursuit of excellence, I have honed a versatile skill set that empowers me to navigate the complex landscape of data science, engineering, and innovation. My commitment to staying at the forefront of technological advancements allows me to seamlessly integrate theoretical knowledge with hands-on expertise. Let's explore the intricacies of my proficiency:
-        </Typography>
-        
-        <Box sx={{ maxWidth: '600px', mx: 'auto' }}>
-          {skills.map((skill, index) => (
-            <Box key={index} sx={{ mb: 3 }}>
-              <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 1 }}>
-                <Typography variant="body2" sx={{ textTransform: 'uppercase', fontWeight: 'bold' }}>
-                  {skill.name}
-                </Typography>
-                <Typography variant="body2" sx={{ fontWeight: 'bold' }}>
-                  {skill.level}%
-                </Typography>
-              </Box>
-              <LinearProgress
-                variant="determinate"
-                value={skill.level}
-                sx={{
-                  height: 8,
-                  borderRadius: 4,
-                  backgroundColor: 'rgba(148,163,184,0.18)',
-                  '& .MuiLinearProgress-bar': {
-                    backgroundColor: theme.palette.primary.main,
-                  },
-                }}
-              />
-            </Box>
-          ))}
-        </Box>
       </Paper>
     </Container>
   )
